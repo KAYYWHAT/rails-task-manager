@@ -1,0 +1,6 @@
+<h1><%= @task.title %></h1>
+
+<p><strong>Details:</strong> <%= @task.details %></p>
+<p><strong>Status:</strong> <%= @task.completed ? 'Completed' : 'Not Completed' %></p>
+<%= link_to 'Update task', edit_task_path, class:"btn"%>
+<%= link_to 'Back', tasks_path %>
